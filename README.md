@@ -4,10 +4,10 @@ This Ansible role allows a user to assume a given role, generating temporary sec
 
 ## Requirements
 
-- Python 2.7
-- PIP package manager (**easy_install pip**)
-- Ansible 2.4 or greater (**pip install ansible**)
-- AWS CLI (**pip install awscli**)
+- Python 3.9
+- PIP for Python 3
+- Ansible Core 2.12 or greater, and Ansible 5.2 or greater (**pip3 install ansible**)
+- AWS CLI (**pip3 install awscli**) installed and configured
 
 ## Setup
 
@@ -17,9 +17,9 @@ The recommended approach to use this role is an Ansible Galaxy requirement to yo
 
 To set this role up as an Ansible Galaxy requirement, first create a `requirements.yml` file in a subfolder called `roles` and add an entry for this role.  See the [Ansible Galaxy documentation](http://docs.ansible.com/ansible/galaxy.html#installing-multiple-roles-from-a-file) for more details.
 
-```
+```yml
 # Example requirements.yml file
-- src: https://github.com/docker-production-aws/aws-sts.git
+- src: https://github.com/velvetropes/aws-sts.git
   scm: git
   version: v1.0
   name: aws-sts
